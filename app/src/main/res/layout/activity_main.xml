@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esquivel.mongoc.MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+
+            android:text="@string/user"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+
+        <EditText
+
+            android:id="@+id/edtUsername"
+
+            android:hint="Enter username"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+        <Button
+
+            android:id="@+id/btnAdd"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/holo_blue_bright"
+            android:text="@string/agregar" />
+
+
+        <Button
+
+            android:id="@+id/btnEdit"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/holo_blue_bright"
+            android:text="@string/editar" />
+
+
+        <Button
+
+            android:id="@+id/btnDelete"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/holo_blue_bright"
+            android:text="@string/borrar" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+
+        android:id="@+id/lstView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
